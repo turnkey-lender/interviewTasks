@@ -5,6 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="_ReSharper.Caches\**" />
+      <EmbeddedResource Remove="_ReSharper.Caches\**" />
+      <None Remove="_ReSharper.Caches\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="NUnit" Version="3.13.2" />
       <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
     </ItemGroup>
