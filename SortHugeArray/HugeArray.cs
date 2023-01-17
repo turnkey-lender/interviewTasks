@@ -5,10 +5,19 @@ using NUnit.Framework;
 namespace InterviewTasks.SortHugeArray
 {
     /// <summary>
-    /// The array may only contain int numbers from 0 to 9
+    /// There's a huge array of ints, which has only numbers from 0 to 9, but in a random order
+    /// The task is to implement the <see cref="Sort"/> method for this array in the most effective way
+    /// Run tests from <see cref="HugeArrayTests"/> 
     /// </summary>
     public class HugeArray
     {
+        public void Sort()
+        {
+            throw new NotImplementedException();
+        }
+
+        #region Test-related code, doesn't require correction
+
         private readonly int _size = 100000000;
         private List<int> _array;
 
@@ -21,13 +30,6 @@ namespace InterviewTasks.SortHugeArray
         }
 
         public List<int> Value => _array;
-
-        public void Sort()
-        {
-            throw new NotImplementedException();
-        }
-
-        #region Private methods
 
         private void FillRandomValues()
         {
